@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <title>Elementos de línea</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,38 +17,190 @@
         <em>El dinero</em> es importante pero <strong>la salud</strong> es lo más
         importante
     </p>
-    <table>
-        <caption>HORARIO DE CLASES</caption>
-        <thead>
-            <tr>
-                <th></th>
-                <th>L</th>
-                <th>M</th>
-                <th>X</th>
-                <th>J</th>
-                <th>V</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>8:00am/9:00am</td>
-                <td>Mátematicas</td>
-                <td>Sociales</td>
-                <td>Inglés</td>
-                <td>Lenguaje</td>
-                <td>Ciencia</td>
-            </tr>
-            <tr>
-                <td>9:00am/10:00am</td>
-                <td>Mátematicas</td>
-                <td>Sociales</td>
-                <td>Inglés</td>
-                <td>Lenguaje</td>
-                <td>Ciencia</td>
-            </tr>
-        </tbody>
+    <section>
+        <a href="http://www.google.com" target="_blank">google</a>
+    </section>
+    <section>
+        <table>
+            <caption>HORARIO DE CLASES</caption>
+            <colgroup>
+                <col span="3">
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>X</th>
+                    <th>J</th>
+                    <th>V</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00am/9:00am</td>
+                    <td>Mátematicas</td>
+                    <td>Sociales</td>
+                    <td>Inglés</td>
+                    <td>Lenguaje</td>
+                    <td>Ciencia</td>
+                </tr>
+                <tr>
+                    <td>9:00am/10:00am</td>
+                    <td>Mátematicas</td>
+                    <td>Sociales</td>
+                    <td>Inglés</td>
+                    <td>Lenguaje</td>
+                    <td>Ciencia</td>
+                </tr>
+                <tr>
+                    <td>10:00am/1:00pm</td>
+                    <td colspan="5">Recreo</td>
+                </tr>
+                <tr>
+                    <td>13:00pm/14:00pm</td>
+                    <td rowspan="2">Mátematicas</td>
+                    <td>Sociales</td>
+                    <td>Inglés</td>
+                    <td>Lenguaje</td>
+                    <td rowspan="2">Ciencia</td>
+                </tr>
+                <tr>
+                    <td>14:00pm/15:00pm</td>
+                    <td>Sociales</td>
+                    <td>Inglés</td>
+                    <td>Lenguaje</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total de asignaturas</td>
+                    <td>12</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <section>
+        <h1>BLOG</h1>
+        <section>
+            <nav>
+                <p><a href="#post-1">post 1</a></p>
+                <p><a href="#post-2">post 2</a></p>
+                <p><a href="#post-3">post 3</a></p>
+                <p><a href="#post-4">post 4</a></p>
+                <p><a href="#post-5">post 5</a></p>
+            </nav>
+            <article id="post-1">
+                <h2>POST 1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
+            </article>
+        </section>
+        <section>
+            <articl id="post-2">
+                <h2>POST 2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
+            </article>
+        </section>
+        <section>
+            <article id="post-3">
+                <h2>POST 3</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
+            </article>
+        </section>
+        <section>
+            <article id="post-4">
+                <h2>POST 4</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
+            </article>
+        </section>
+        <section>
+            <article id="post-5">
+                <h2>POST 5</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
+
+            </article>
+        </section>
+    </section>
+    <section>
+        <ol type="i">
+            <li>
+                html
+                <ul>
+                    <li>Estructura</li>
+                    <li>Sintaxis</li>
+                    <li>Etiquetas</li>
+                </ul>
+            </li>
+            <li>
+                css
+                <ul type="square">
+                    <li>Estructura</li>
+                    <li>Sintaxis</li>
+                    <li>Etiquetas</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+    <section>
+        <address>
+            Tony Stark <br>
+            Malibú 10880 <br>
+            90265 <br>
+            California
+        </address>
+        <blockquote cite="https://www.fraseslorem.com">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo distinctio veniam, nobis error quae blanditiis quam suscipit a itaque praesentium aliquam necessitatibus harum ex earum at recusandae quia eum iusto Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet tenetur iure rem laudantium excepturi dignissimos non? Eaque debitis ipsum, error aliquam, eius vel veniam, qui esse veritatis perspiciatis quisquam nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae odio odit officiis, eveniet sapiente commodi maiores corrupti consectetur eligendi consequuntur incidunt optio aut doloremque suscipit nobis, vitae non totam. Minus.
+            </p>
+        </blockquote>
+        <pre>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, <spam>adipisicing elit. 
+                Commodi voluptatem amet unde dolorum. Repellat aspernatur,</spam>
+                similique qui, laudantium dicta fugiat provident quia 
+                reprehenderit possimus eos libero facere itaque molestias minus!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Numquam tenetur illo quae, vel reiciendis impedit maiores, 
+                veritatis nesciunt facilis unde minima repellat cum ullam quam 
+                corporis libero veniam molestias ipsa.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Consequuntur odio, doloremque veritatis porro culpa labore 
+                iusto vero, repellat minus qui hic veniam rem fugiat voluptate 
+                minima itaque! Perspiciatis, officia quasi.
+            </p>
+            <q>Yo soy iroman</q>
+        </pre>
+        <hr>
+        <pre>
+            <code>
+                &#60;style&#62;
+                    body{
+                        background-color: gray;
+                    }
+                    &#60;&#47;style&#62;
+            </code>
+        </pre>
+        &copy;
+    </section>
+    <section>
         
-    </table>
+    </section>
 </body>
 
 </html>
