@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="zxx">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Elementos de línea</title>
-    <style>
-        body{
-            background-color: gray;
-        }
-    </style>
 </head>
 
 <body>
-    <!--Primeras etiquetas-->
-    <section>
+    <header>
+        Inicio
+    </header>
+    <main>
+        <!--Primeras etiquetas-->
         <h1>ELEMENTOS DE LINEA</h1>
-        <p>
-            <em>El dinero</em> es importante pero <strong>la salud</strong> es lo más
-            importante
-        </p>
-            <a href="http://www.google.com" target="_blank">google</a>
-    </section>
-    <!-- tablas -->
-            <article>
+        <a href="https://www.youtube.com/@DorianDesings" target="_blank">Canal de DorianDesings</a>
+        <h4>Navegar por la pagina</h4>
+        <nav>
+            <p><a href="#tablas">Tablas</a></p>
+            <p><a href="#moverse">Utilizar anclas</a></p>
+            <p><a href="#listas">Listas</a></p>
+            <p><a href="#otras">Otras etiquetas</a></p>
+            <p><a href="#formularios">formularios</a></p>
+        </nav>
+            <h2>Este es un resumen de las lecciones del curso de html del canal de Youtube DorianDesings</h2>
+            <!-- tablas -->
+            <div id="tablas">
+                <h3>Tablas</h3>
                 <table>
                     <caption>HORARIO DE CLASES</caption>
-                    <colgroup>
+                    <!--                    <colgroup>
                         <col span="3">
                         <col>
                         <col>
                     </colgroup>
+                    -->
                     <thead>
                         <tr>
                             <th></th>
@@ -58,7 +62,7 @@
                             <td>Ciencia</td>
                         </tr>
                         <tr>
-                            <td>10:00am/1:00pm</td>
+                            <td colspan="1">10:00am/1:00pm</td>
                             <td colspan="5">Recreo</td>
                         </tr>
                         <tr>
@@ -79,134 +83,274 @@
                     <tfoot>
                         <tr>
                             <td colspan="5">Total de asignaturas</td>
-                            <td>12</td>
+                            <td colspan="1">12</td>
                         </tr>
                     </tfoot>
                 </table>
-    </section>
-    <!-- anclas para mopovernos por la pagina -->
-    <section>
-        <h1>BLOG</h1>
-        <section>
-            <nav>
-                <p><a href="#post-1">post 1</a></p>
-                <p><a href="#post-2">post 2</a></p>
-                <p><a href="#post-3">post 3</a></p>
-                <p><a href="#post-4">post 4</a></p>
-                <p><a href="#post-5">post 5</a></p>
-            </nav>
-            <article id="post-1">
-                <h2>POST 1</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
-            </article>
-        </section>
-        <section>
-            <articl id="post-2">
-                <h2>POST 2</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
-            </article>
-        </section>
-        <section>
-            <article id="post-3">
-                <h2>POST 3</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
-            </article>
-        </section>
-        <section>
-            <article id="post-4">
-                <h2>POST 4</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
-            </article>
-        </section>
-        <section>
-            <article id="post-5">
-                <h2>POST 5</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est culpa neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam autem ullam. Temporibus?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed delectus? At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae eligendi id harum corporis fugiat?</p>
-
-            </article>
-        </section>
-    </section>
-    <!-- listas -->
-    <section>
-        <ol type="i">
-            <li>
-                html
-                <ul>
-                    <li>Estructura</li>
-                    <li>Sintaxis</li>
-                    <li>Etiquetas</li>
-                </ul>
-            </li>
-            <li>
-                css
-                <ul type="square">
-                    <li>Estructura</li>
-                    <li>Sintaxis</li>
-                    <li>Etiquetas</li>
-                </ul>
-            </li>
-        </ol>
-    </section>
-    <!-- otras etiquetas -->
-    <section>
-        <address>
-            Tony Stark <br>
-            Malibú 10880 <br>
-            90265 <br>
-            California
-        </address>
-        <blockquote cite="https://www.fraseslorem.com">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo distinctio veniam, nobis error quae blanditiis quam suscipit a itaque praesentium aliquam necessitatibus harum ex earum at recusandae quia eum iusto Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet tenetur iure rem laudantium excepturi dignissimos non? Eaque debitis ipsum, error aliquam, eius vel veniam, qui esse veritatis perspiciatis quisquam nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae odio odit officiis, eveniet sapiente commodi maiores corrupti consectetur eligendi consequuntur incidunt optio aut doloremque suscipit nobis, vitae non totam. Minus.
-            </p>
-        </blockquote>
-        <pre>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, <spam>adipisicing elit. 
-                Commodi voluptatem amet unde dolorum. Repellat aspernatur,</spam>
-                similique qui, laudantium dicta fugiat provident quia 
-                reprehenderit possimus eos libero facere itaque molestias minus!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Numquam tenetur illo quae, vel reiciendis impedit maiores, 
-                veritatis nesciunt facilis unde minima repellat cum ullam quam 
-                corporis libero veniam molestias ipsa.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Consequuntur odio, doloremque veritatis porro culpa labore 
-                iusto vero, repellat minus qui hic veniam rem fugiat voluptate 
-                minima itaque! Perspiciatis, officia quasi.
-            </p>
-            <q>Yo soy iroman</q>
-        </pre>
-        <hr>
-        <pre>
-            <code>
-                &#60;style&#62;
-                    body{
-                        background-color: gray;
-                    }
-                    &#60;&#47;style&#62;
-            </code>
-        </pre>
-        &copy;
-    </section>
-    <!-- formularios -->
-    <section>
-        
-    </section>
+            </div>
+            <!-- anclas para mopovernos por la pagina -->
+            <div id="moverse">
+                <h3>BLOG</h3>
+                    <h4>Navegar por la pagina</h4>
+                    <nav>
+                        <p><a href="#post-1">post 1</a></p>
+                        <p><a href="#post-2">post 2</a></p>
+                        <p><a href="#post-3">post 3</a></p>
+                        <p><a href="#post-4">post 4</a></p>
+                        <p><a href="#post-5">post 5</a></p>
+                    </nav>
+                    <article id="post-1">
+                        <h2>POST 1</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est
+                            culpa
+                            neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam
+                            autem
+                            ullam. Temporibus?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est
+                            culpa
+                            neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam
+                            autem
+                            ullam. Temporibus?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed
+                            delectus?
+                            At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae
+                            eligendi id
+                            harum corporis fugiat?</p>
+                    </article>
+                    <article id="post-2">
+                        <h2>POST 2</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est
+                            culpa
+                            neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam
+                            autem
+                            ullam. Temporibus?
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed
+                            delectus?
+                            At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae
+                            eligendi id
+                            harum corporis fugiat?
+                        </p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est
+                            culpa
+                            neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam
+                            autem
+                            ullam. Temporibus?
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed
+                            delectus?
+                            At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae
+                            eligendi id
+                            harum corporis fugiat?
+                        </p>
+                    </article>
+                    <article id="post-3">
+                        <h2>POST 3</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est
+                            culpa
+                            neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam
+                            autem
+                            ullam. Temporibus?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed
+                            delectus?
+                            At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae
+                            eligendi id
+                            harum corporis fugiat?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est
+                            culpa
+                            neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam
+                            autem
+                            ullam. Temporibus?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed
+                            delectus?
+                            At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae
+                            eligendi id
+                            harum corporis fugiat?</p>
+                    </article>
+                    <article id="post-4">
+                        <h2>POST 4</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est
+                            culpa
+                            neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam
+                            autem
+                            ullam. Temporibus?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed
+                            delectus?
+                            At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae
+                            eligendi id
+                            harum corporis fugiat?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est
+                            culpa
+                            neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam
+                            autem
+                            ullam. Temporibus?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed
+                            delectus?
+                            At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae
+                            eligendi id
+                            harum corporis fugiat?</p>
+                    </article>
+                    <article id="post-5">
+                        <h2>POST 5</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid esse odit, voluptates est
+                            culpa
+                            neque omnis animi, quisquam eos placeat veritatis nam debitis cupiditate at a quibusdam
+                            autem
+                            ullam. Temporibus?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed
+                            delectus?
+                            At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae
+                            eligendi id
+                            harum corporis fugiat?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vitae quas dolor sed
+                            delectus?
+                            At ducimus officia provident vel laboriosam quia doloremque ipsa tenetur, recusandae
+                            eligendi id
+                            harum corporis fugiat?</p>
+                    </article>
+            </div>
+            <!-- listas -->
+            <div id="listas">
+                <h2>listas</h2>
+                <ol type="i">
+                    <li>
+                        html
+                        <ul>
+                            <li>Estructura</li>
+                            <li>Sintaxis</li>
+                            <li>Etiquetas</li>
+                        </ul>
+                    </li>
+                    <li>
+                        css
+                        <ul>
+                            <li>Estructura</li>
+                            <li>Sintaxis</li>
+                            <li>Etiquetas</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <!-- otras etiquetas -->
+            <div id="otras">
+                <h3>Otras etiquetas</h3>
+                <address>
+                    Tony Stark <br>
+                    Malibú 10880 <br>
+                    90265 <br>
+                    California
+                </address>
+                <blockquote cite="https://www.fraseslorem.com">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo distinctio veniam, nobis error
+                        quae
+                        blanditiis quam suscipit a itaque praesentium aliquam necessitatibus harum ex earum at
+                        recusandae
+                        quia eum iusto Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet tenetur iure rem
+                        laudantium excepturi dignissimos non? Eaque debitis ipsum, error aliquam, eius vel veniam, qui
+                        esse
+                        veritatis perspiciatis quisquam nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Repudiandae odio odit officiis, eveniet sapiente commodi maiores corrupti consectetur eligendi
+                        consequuntur incidunt optio aut doloremque suscipit nobis, vitae non totam. Minus.
+                    </p>
+                </blockquote>
+                <pre>
+                    Lorem ipsum dolor sit amet consectetur,adipisicing elit. 
+                    Commodi voluptatem amet unde dolorum. Repellat aspernatur,
+                    similique qui, laudantium dicta fugiat provident quia 
+                    reprehenderit possimus eos libero facere itaque molestias minus!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Numquam tenetur illo quae, vel reiciendis impedit maiores, 
+                    veritatis nesciunt facilis unde minima repellat cum ullam quam 
+                    corporis libero veniam molestias ipsa.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Consequuntur odio, doloremque veritatis porro culpa labore 
+                    iusto vero, repellat minus qui hic veniam rem fugiat voluptate 
+                    minima itaque! Perspiciatis, officia quasi.
+                </pre>
+                <q>Yo soy iroman</q>
+                <pre>
+                    <code>
+                        &#60;style&#62;
+                        body{
+                            background-color: gray;
+                        }
+                        &#60;&#47;style&#62;
+                    </code>
+                </pre>
+                &copy;
+                <hr>
+            </div>
+            <!-- formularios -->
+            <div id="formularios">
+                <h3>formularios</h3>
+                <form>
+                    <label for="name">Nombre</label>
+                    <input id="name">
+                    <button>Enviar Formulario</button>
+                </form>
+                <form>
+                    <input type="submit" value="Enviar">
+                </form>
+                <section>
+                    <h2>Tipos de imputs</h2>
+                    <article>
+                        <h2>Estos solo son algunos tipos de imputs</h2>
+                        <ul>
+                            <li>button: Crea un botón que se puede hacer clic.</li>
+                            <li>checkbox: Crea una casilla de verificación que se puede marcar o desmarcar.</li>
+                            <li>color: Crea un control para seleccionar un color.</li>
+                            <li>date: Crea un control para seleccionar una fecha.</li>
+                            <li>datetime-local: Crea un control para seleccionar una fecha y hora.</li>
+                            <li>email: Crea un control para ingresar una dirección de correo electrónico.</li>
+                            <li>file: Crea un control para seleccionar un archivo</li>
+                            <li>hidden: Crea un control oculto que no se muestra en la página.</li>
+                            <li>image: Crea un control para mostrar una imagen.</li>
+                            <li>month: Crea un control para seleccionar un mes y un año.</li>
+                            <li>number: Crea un control para ingresar un número.</li>
+                            <li>password: Crea un control para ingresar una contraseña.</li>
+                            <li>radio: Crea un botón de opción que se puede seleccionar.</li>
+                            <li>range: Crea un control para seleccionar un rango de valores.</li>
+                            <li>reset: Crea un botón para restablecer los valores de un formulario.</li>
+                            <li>search: Crea un control para ingresar texto de búsqueda.</li>
+                            <li>submit: Crea un botón para enviar un formulario.</li>
+                            <li>tel: Crea un control para ingresar un número de teléfono.</li>
+                            <li>text: Crea un control para ingresar texto.</li>
+                            <li>time: Crea un control para seleccionar una hora.</li>
+                            <li>url: Crea un control para ingresar una dirección URL</li>
+                            <li>week: Crea un control para seleccionar una semana.</li>
+                        </ul>
+                    </article>
+                    <form>
+                        <h2>Elementos Selecionasables</h2>
+                        <label>Masculino
+                            <input type="radio" name="gender" value="masculino" checked>
+                        </label>
+                        <label>femenino
+                            <input type="radio" name="gender" value="femenino">
+                        </label>
+                        <label>desconocido
+                            <input type="radio" name="gender" value="desconocido">
+                        </label>
+                    </form>
+                    <label>
+                        html
+                        <input type="checkbox" name="language" value="html">
+                    </label>
+                    <label>
+                        css
+                        <input type="checkbox" name="language" value="css">
+                    </label>
+                    <label>
+                        javascript
+                        <input type="checkbox" name="language" value="javascript">
+                    </label>
+                </section>
+            </div>
+    </main>
+    <footer>
+        <a href="https://www.youtube.com/@DorianDesings" target="_blank">canal de DorianDesings</a>
+    </footer>
 </body>
 
 </html>
