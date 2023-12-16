@@ -13,6 +13,7 @@
     <main>
         <!--Primeras etiquetas-->
         <h1>ELEMENTOS DE LINEA</h1>
+        <h2>Este es un resumen de las lecciones del curso de html del canal de Youtube DorianDesings</h2>
         <a href="https://www.youtube.com/@DorianDesings" target="_blank">Canal de DorianDesings</a>
         <h4>Navegar por la pagina</h4>
         <nav>
@@ -22,7 +23,7 @@
             <p><a href="#otras">Otras etiquetas</a></p>
             <p><a href="#formularios">formularios</a></p>
         </nav>
-        <h2>Este es un resumen de las lecciones del curso de html del canal de Youtube DorianDesings</h2>
+        <hr>
         <!-- tablas -->
         <div id="tablas">
             <h3>Tablas</h3>
@@ -87,6 +88,7 @@
                     </tr>
                 </tfoot>
             </table>
+            <hr>
         </div>
         <!-- anclas para mopovernos por la pagina -->
         <div id="moverse">
@@ -208,6 +210,7 @@
                     eligendi id
                     harum corporis fugiat?</p>
             </article>
+            <hr>
         </div>
         <!-- listas -->
         <div id="listas">
@@ -230,6 +233,7 @@
                     </ul>
                 </li>
             </ol>
+            <hr>
         </div>
         <!-- otras etiquetas -->
         <div id="otras">
@@ -392,7 +396,46 @@
                             <option value="serpiente"></option>
                     </datalist>
                 </form>
+                <br>
+                <br>
+                <form action="/index.htmls" method="get">
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <div>
+                            <label for="names">Nombre</label>
+                            <input type="text" id="names">
+                        </div>
+                        <div>
+                            <label for="subname">Apellidos</label>
+                            <input type="text" id="subname">
+                        </div>
+                    </fieldset>
+                    <br>
+                    <br>
+                    <input type="file">
+                    <br>
+                    <br>
+                    <div>
+                        <label for="message">Informacion</label>
+                        <textarea name="information" id="message" cols="30" rows="10"></textarea>
+                        <button>Enviar formulario</button>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <input type="text" placeholder="Introduce tu nombre" required>
+                        <input type="text" value="hola" readonly>
+                        <select name="number">
+                            <option value="one">One</option>
+                            <option value="two" selected>Two</option>
+                        </select>
+                        <input type="number" min="5">
+                        <input type="text" minlength="3" maxlength="5" autofocus required>
+                        <input type="submit">
+                    </div>
+                </form>
             </section>
+            <hr>
         </div>
     </main>
     <footer>
